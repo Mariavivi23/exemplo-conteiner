@@ -1,0 +1,14 @@
+services:
+  db:
+    image: mysql:5.7
+    container_name: banco
+    restart: always
+    environment:
+      MYSQL_DATABASE: meu_banco
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: appassword
+      MYSGL_ROOT_PASSWORD: rootpass
+    ports:
+      - 3306:3306
+      
+    
